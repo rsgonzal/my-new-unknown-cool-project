@@ -15,7 +15,7 @@ let close = document.getElementsByClassName("close");
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     let div = this.parentElement;
-    div.style.display = "none";
+    div.classList.toggle('line-through');
   }
 }
 
@@ -49,7 +49,7 @@ function newElement() {
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
       let div = this.parentElement;
-      div.style.display = "none";
+      div.classList.toggle('line-through');
     }
   }
 }
